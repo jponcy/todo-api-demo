@@ -1,0 +1,23 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc-watch --project . -w false",
+    "start:dev": "npx tsc-watch --project . --onSuccess  \"node  dist/index.js\"",
+    "start": "node  dist/index.js"
+  },
+  "author": "Jonathan PONCY <jonathan.poncy@tactfactory.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/json-server": "^0.14.2",
+    "@types/node": "^13.9.1",
+    "json-server": "^0.16.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.3"
+  }
+}
